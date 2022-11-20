@@ -1,0 +1,44 @@
+
+<button (click)="logout()">logout</button>
+<button (click)="getEngineList()">Get Engine List</button>
+<button (click)="getTaskList()">Get Task List </button>
+<button (click)="getProcessList()">Get Process List</button>
+<button (click)="getUserInfo()">Get user info</button>
+
+<button (click)="getAcceptedRequests()">Get Accepted Requests</button>
+<button (click)="getRejectedRequests()">Get Rejected Requests</button> 
+<br>
+<div class="Codebox">
+<h1>start a process_instance</h1>
+<label for="name">Process_Key: </label>
+<input id="name" type="text" [formControl]="process_key">
+<button (click)="startProcessByKey()">Start Process</button>
+</div>
+
+
+<div class="Codebox">
+<h1>Complete a task</h1>
+<label for="name">Task_ID: </label>
+<input id="name" type="text" [formControl]="task_id">
+<textarea id="payload" name="w3review" [formControl]="payload" rows="4" cols="50">
+</textarea>
+<button (click)="completeTask()">Complete</button>
+</div>
+
+<div class="Codebox">
+<h1>Tasks</h1>
+<label for="name">taskID: </label>
+<input id="name" type="text" [formControl]="taskId">
+<button (click)="getTaskForm()">get Task Form</button>
+<button (click)="getTaskVariables()">get Task Varaibles</button>
+</div>
+
+<div class="Codebox">
+<h1>Result</h1>
+<code>
+    <pre>{{response |json}}</pre>
+</code>
+</div>
+
+
+<router-outlet></router-outlet>

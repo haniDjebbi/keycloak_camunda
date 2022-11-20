@@ -1,0 +1,23 @@
+{
+  "/camunda/engine-rest/engine": {
+    "target": "http://localhost:8080",
+    "secure": false
+  },
+  "/camunda/engine-rest/task": {
+    "target": "http://localhost:8080",
+    "secure": false
+  },
+  "/camunda/engine-rest/process-definition": {
+    "target": "http://localhost:8080",
+    "secure": false
+  },
+  "/camunda/engine-rest/user": {
+    "target": "http://localhost:8080",
+    "secure": false
+  },
+  "/camunda/engine-rest/task": {
+    "target": "http://localhost:8080",
+    "secure": false
+  }
+
+}
